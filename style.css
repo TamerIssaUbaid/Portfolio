@@ -409,6 +409,29 @@ form .botao-enviar input{
 
 }
 
+form input,
+form textarea {
+    background-color: #2b2b2b;
+    border: none;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    background-color: #2b2b2b;
+    border: 2px solid #f5d90a; /* amarelo dos campos */
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #2b2b2b inset;
+    -webkit-text-fill-color: white; /* cor do campo corrigido no navegador */ 
+}
+
 
 /* ESTILO DO RODAPÉ */
 
@@ -726,13 +749,18 @@ html {
         margin: 0 auto; 
         }
 
+        .img-port .overlay{
+            opacity: 1;
+            transform: transLateY(0); 
+        }
+
 
        section.portfolio .flex{
         gap: 60px;
         }
 
-
-       /* RODAPE MOBILE */
+        
+        /* RODAPE MOBILE */
        footer .flex{
         flex-direction: column;
         gap: 40px;

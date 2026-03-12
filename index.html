@@ -34,11 +34,12 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
 
             <nav class = "menu-desktop">
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Interesses</a></li> 
-                    <li><a href="#">Especialidades</a></li> 
-                    <li><a href="#">Sobre</a></li> 
-                    <li><a href="#">Projetos</a></li>  
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#interesses">Interesses</a></li> 
+                    <li><a href="#especialidades">Especialidades</a></li> 
+                    <li><a href="#sobre">Sobre</a></li> 
+                    <li><a href="#projetos">Projetos</a></li>  
+                    <li><a href="#contato">Contato</a></li>
 
                 </ul>
             </nav>
@@ -60,12 +61,12 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
             
                    <nav>
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Interesses</a></li> 
-                    <li><a href="#">Especialidades</a></li> 
-                    <li><a href="#">Sobre</a></li> 
-                    <li><a href="#">Projetos</a></li>  
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#interesses">Interesses</a></li> 
+                    <li><a href="#especialidades">Especialidades</a></li> 
+                    <li><a href="#sobre">Sobre</a></li> 
+                    <li><a href="#projetos">Projetos</a></li>  
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
             
@@ -77,7 +78,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
     </header>
 
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site" id="inicio">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -100,7 +101,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
             </div><!-- interface -->
         </section><!-- topo-do-site -->
 
-        <section class="interesse">
+        <section class="interesse" id="interesses">
             <div class="interface">
                 <h2 class="titulo"><span>INTERESSES</span></h2>
                 <div class="flex">
@@ -114,7 +115,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
             </div><!-- interface -->
         </section><!-- interesse -->
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES</span></h2>
                 <div class="flex">
@@ -140,7 +141,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
             </div><!-- interface --> 
         </section><!-- especialidades --> 
 
-        <section class="sobre">
+        <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
                     
@@ -172,7 +173,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
         
         </section><!-- sobre -->
 
-        <section class="portfolio">
+        <section class="portfolio" id="projetos">
             <div class="interface">
                 <h2 class="titulo">MEU <span>PORTFÓLIO (W.I.P)</span></h2> 
                 <div class="flex">
@@ -186,15 +187,17 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,4
             </div><!-- interface -->
         </section><!-- portfolio -->
 
-        <section class="formulario">
+        <section class="formulario" id="contato">
             <div class="interface">
                 <h2 class="titulo">FALA <span>COMIGO</span></h2> 
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu email:" required>
-                    <textarea name="" id="" placeholder="Sua mensagem:"></textarea>
+                <form action="https://formsubmit.co/uubtamer@gmail.com" method="POST">
+                    <input type="text" name="name" id="name" placeholder="Seu nome completo:" required>
+                    <input type="email" name="email" id="email" placeholder="Seu email:" required>
+                    <textarea name="message" id="message" placeholder="Sua mensagem:"></textarea>
                     <div class="botao-enviar"><input type="submit" value="ENVIAR"></div>
+
+                    
                 </form>
             </div><!-- interface -->
         </section><!-- formulario -->
